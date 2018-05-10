@@ -1,12 +1,12 @@
-# SEPABins
-The repository includes all you need to test SEPA, a publish-subscribe architecture designed to support information level interoperability by means of Semantic Web technologies. The architecture is built on top of a generic SPARQL endpoint where publishers and subscribers use standard **SPARQL** [Updates](https://www.w3.org/TR/sparql11-update/) and [Queries](https://www.w3.org/TR/sparql11-query/). Notifications about events (i.e., changes in the [**RDF**](https://www.w3.org/RDF/) knowledge base) are expressed in terms of [added and removed SPARQL binding results](http://wot.arces.unibo.it/TR/sparql11-subscribe.html) since the previous notification. 
+# FFSEPABins
+The repository includes all you need to test FFSEPA, a publish-subscribe architecture designed to support information level interoperability by means of Semantic Web technologies. The architecture is built on top of a generic SPARQL endpoint where publishers and subscribers use standard **SPARQL** [Updates](https://www.w3.org/TR/sparql11-update/) and [Queries](https://www.w3.org/TR/sparql11-query/). Notifications about events (i.e., changes in the [**RDF**](https://www.w3.org/RDF/) knowledge base) are expressed in terms of [added and removed SPARQL binding results](http://wot.arces.unibo.it/TR/sparql11-subscribe.html) since the previous notification. This is a fork of SEPA.
 
 Developers can benefit of a set of API implementing a [Producer-Aggregator-Consumer design pattern](http://wot.arces.unibo.it/TR/jsap.html).
 
 For more details on the current implementation and how you can contribute please follow this [link](https://github.com/arces-wot/SEPA).
 
 ## Installation
-Clone the repository: `git clone https://github.com/arces-wot/SEPABins.git`
+Clone the repository: `git clone https://github.com/desmovalvo/FFSEPABins.git`
 
 ## Usage
 The SEPA engine needs to connect to a SPARQL endpoint supporting the [SPARQL 1.1 Protocol](https://www.w3.org/TR/sparql11-protocol/). For you convenience, the repository includes two endpoints ([Blazegraph](https://www.blazegraph.com/),[Fuseki](https://jena.apache.org/documentation/serving_data/)).
