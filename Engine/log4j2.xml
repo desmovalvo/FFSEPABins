@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration>
-	<CustomLevels>
-		<CustomLevel name="timing" intLevel="700" />
-	</CustomLevels>
-	<Appenders>
-		<Console name="Console" target="SYSTEM_OUT">
-			<PatternLayout pattern="%d{ISO8601} [%-5level] %t (%F:%L) %msg%n%throwable" />
-		</Console>
-		<File name="Timing" fileName="logs/${sys:logFilename}.csv">
-			<PatternLayout pattern="%m\n"/>
-		</File>
-	</Appenders>
-	<Loggers>
-		<Root level="debug">
-			<AppenderRef ref="Console" level="info"/>
-			<!--  <AppenderRef ref="Timing"/> 
-			-->
-		</Root>
-	</Loggers>
+<Configuration status="ALL">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+          <PatternLayout pattern="%d{ISO8601} [%-5level] %t (%F:%L) %msg%n%throwable"/>
+        </Console>       
+    </Appenders>
+    <Loggers>
+        <Root level="all">
+            <AppenderRef ref="Console" />
+        </Root>
+    </Loggers>
 </Configuration>
